@@ -1,6 +1,18 @@
 @use 'sass:color';
 @use '../utils/varibales' as *;
 
+/*
+  Index
+  ---------- ---------- ---------- ---------- ----------
+  • Main Navigation
+  • Header Banner
+*/
+
+/*
+  • Main Navigation
+  ---------- ---------- ---------- ---------- ----------
+*/
+
 .main-navigation {
   padding: 1rem;
   display: flex;
@@ -14,6 +26,11 @@
   display: block;
   max-width: 200px;
 }
+
+/*
+  • Header Banner
+  ---------- ---------- ---------- ---------- ----------
+*/
 
 .header-banner {
   display: flex;

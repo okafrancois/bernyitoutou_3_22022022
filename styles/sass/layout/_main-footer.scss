@@ -1,0 +1,35 @@
+@use '../utils/varibales' as *;
+
+/*
+  Index
+  ---------- ---------- ---------- ---------- ----------
+  • Base styles
+*/
+
+/*
+  • Base styles
+  ---------- ---------- ---------- ---------- ----------
+*/
+
+.main-footer {
+  background: $dark-gray;
+  color: #fff;
+
+  &__logo svg{
+    width: 100px;
+    margin-bottom: 0.5rem;
+
+    path {
+      fill: #fff;
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+
+  &__link {
+    margin-bottom: 0.5rem;
+  }
+}

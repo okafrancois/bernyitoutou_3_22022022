@@ -16,6 +16,12 @@ h2
 }
 
 .container {
-  padding: 1rem 1.5rem;
+  padding: 1.5rem;
   margin: 0 to-rem(25px);
+}
+
+.last-margin-fix {
+  :last-child {
+    margin-bottom: 0 !important;
+  }
 }
