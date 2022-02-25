@@ -1,0 +1,11 @@
+@use 'varibales' as *;
+
+//convert a number in px
+@function to-px($number) {
+  @return $number * 1px;
+}
+
+//convert a number into
+@function to-rem($pxValue) {
+  @return #{$pxValue / $default-font-base}rem;
+}

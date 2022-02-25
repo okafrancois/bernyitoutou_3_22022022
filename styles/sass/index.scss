@@ -1,8 +1,8 @@
 @use 'vendors/normalize';
-@use 'base/color';
-@use 'base/font';
 @use 'utils/varibales';
 @use 'utils/functions';
+@use 'base/reset';
+@use 'base/config';
 @use 'layout/main-header';
 @use 'layout/main-footer';
 @use 'components/button';

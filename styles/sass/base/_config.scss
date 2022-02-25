@@ -1,0 +1,21 @@
+@use '../utils/varibales' as *;
+@use '../utils/functions' as *;
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+body {
+  font-size: to-px($default-font-base);
+  font-family: $default-font-family;
+  color: $default-font-color
+}
+
+h1,
+h2
+{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  padding: 1rem 1.5rem;
+  margin: 0 to-rem(25px);
+}

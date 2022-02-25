@@ -1,0 +1,28 @@
+@use 'sass:color';
+@use '../utils/varibales' as *;
+
+.main-navigation {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px #c2c2c2;
+  position: relative;
+}
+
+.main-logo {
+  display: block;
+  max-width: 200px;
+}
+
+.header-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: darken($gray-bg, 5%);
+  color: $custom-font-color;
+  font-weight: bold;
+}
+
+
