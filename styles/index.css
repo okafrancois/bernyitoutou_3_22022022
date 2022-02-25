@@ -388,13 +388,12 @@ body {
 
 h1,
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .container {
-  padding: 1.5rem;
-  margin: 0 1.5625pxrem;
+  padding: 2.8125rem 1.5625rem;
 }
 
 .last-margin-fix :last-child {
@@ -472,9 +471,28 @@ h2 {
   Index
   ---------- ---------- ---------- ---------- ----------
   • Config
-  • Hero banner styles
-  • Block gallery styles
-  • Pictures slider styles
+  • Banner section styles
 */
+/*
+  • Config
+  ---------- ---------- ---------- ---------- ----------
+*/
+/*
+  • Banner section styles
+  ---------- ---------- ---------- ---------- ----------
+*/
+.banner {
+  background: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.banner__text {
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: 1.5625rem;
+}
 
 /*# sourceMappingURL=index.css.map */
