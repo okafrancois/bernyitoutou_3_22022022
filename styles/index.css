@@ -645,10 +645,17 @@ h2 {
   • Restaurant cards section styles
   ---------- ---------- ---------- ---------- ----------
 */
+.restaurants {
+  background: #F6F6F6;
+}
+
 .restaurants__cards {
   display: flex;
   flex-flow: row wrap;
   gap: 0 2%;
+}
+.restaurants__cards > * {
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -79,8 +79,16 @@
   ---------- ---------- ---------- ---------- ----------
 */
 
+.restaurants {
+  background: $gray;
+}
+
 .restaurants__cards {
   display: flex;
   flex-flow: row wrap;
   gap: 0 2%;
+
+  > * {
+    width: 100%;
+  }
 }
