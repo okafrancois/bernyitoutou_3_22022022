@@ -641,4 +641,14 @@ h2 {
   margin-right: 1.5rem;
 }
 
+/*
+  • Restaurant cards section styles
+  ---------- ---------- ---------- ---------- ----------
+*/
+.restaurants__cards {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0 2%;
+}
+
 /*# sourceMappingURL=index.css.map */
