@@ -1,0 +1,99 @@
+@use 'sass:color' as *;
+@use '../utils/varibales' as *;
+@use '../utils/functions' as *;
+
+/*
+  Index
+  ---------- ---------- ---------- ---------- ----------
+  • Base styles
+  • --new styles
+*/
+
+/*
+  • Base styles
+  ---------- ---------- ---------- ---------- ----------
+*/
+
+.menu-card {
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  box-shadow: $default-box-shadow;
+
+  &__container {
+    display: block;
+    position: relative;
+  }
+
+  &__label {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 90%;
+    z-index: 1;
+  }
+
+  &__cover {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: calc(100% / (2/1));
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__content {
+    position: relative;
+    padding: 1rem 50px 1rem 1rem;
+  }
+
+  &__title {
+    font-weight: bold;
+    margin-bottom: to-rem(5);
+    font-size: 1.1rem;
+  }
+
+  &__subtitle {
+    font-weight: 300;
+  }
+
+  &__save-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    width: 30px;
+    height: 30px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+/*
+  • --new styles
+  ---------- ---------- ---------- ---------- ----------
+*/
+
+.--new.menu-card {
+  &__label {
+    display: block;
+    color: $green;
+    background: #99E2D0;
+  }
+}

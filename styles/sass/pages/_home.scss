@@ -40,3 +40,35 @@
   • Process section styles
   ---------- ---------- ---------- ---------- ----------
 */
+
+.step-bloc {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1.7rem;
+  background: $gray;
+  margin-bottom: 1.5rem;
+  margin-left: calc(25px /2);
+  box-shadow: $default-box-shadow;
+  border-radius: 1rem;
+  font-weight: 500;
+  color: $custom-font-color;
+
+  &__number {
+    position: absolute;
+    left: calc(0px - (25px / 2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $primary-color;
+    height: to-rem(25);
+    width: to-rem(25);
+    border-radius: 50%;
+    font-size: 80%;
+    color: #fff;
+  }
+
+  &__icon {
+    margin-right: 1.5rem;
+  }
+}

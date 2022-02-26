@@ -405,7 +405,7 @@ h2 {
   padding: 2.8125rem 1.5625rem;
 }
 
-.last-margin-fix :last-child {
+.last-margin-fix > :last-child {
   margin-bottom: 0 !important;
 }
 
@@ -501,6 +501,87 @@ h2 {
 /*
   Index
   ---------- ---------- ---------- ---------- ----------
+  • Base styles
+  • --new styles
+*/
+/*
+  • Base styles
+  ---------- ---------- ---------- ---------- ----------
+*/
+.menu-card {
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 5px 5px 0 #d6d1d1;
+}
+.menu-card__container {
+  display: block;
+  position: relative;
+}
+.menu-card__label {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 90%;
+  z-index: 1;
+}
+.menu-card__cover {
+  position: relative;
+  overflow: hidden;
+}
+.menu-card__cover::before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 50%;
+}
+.menu-card__cover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu-card__content {
+  position: relative;
+  padding: 1rem 50px 1rem 1rem;
+}
+.menu-card__title {
+  font-weight: bold;
+  margin-bottom: 0.3125rem;
+  font-size: 1.1rem;
+}
+.menu-card__subtitle {
+  font-weight: 300;
+}
+.menu-card__save-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  width: 30px;
+  height: 30px;
+}
+.menu-card__save-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+  • --new styles
+  ---------- ---------- ---------- ---------- ----------
+*/
+.--new.menu-card__label {
+  display: block;
+  color: #008766;
+  background: #99E2D0;
+}
+
+/*
+  Index
+  ---------- ---------- ---------- ---------- ----------
   • Config
   • Banner section styles
 */
@@ -530,5 +611,34 @@ h2 {
   • Process section styles
   ---------- ---------- ---------- ---------- ----------
 */
+.step-bloc {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1.7rem;
+  background: #F6F6F6;
+  margin-bottom: 1.5rem;
+  margin-left: 12.5px;
+  box-shadow: 0px 5px 5px 0 #d6d1d1;
+  border-radius: 1rem;
+  font-weight: 500;
+  color: #353535;
+}
+.step-bloc__number {
+  position: absolute;
+  left: -12.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #9356DC;
+  height: 1.5625rem;
+  width: 1.5625rem;
+  border-radius: 50%;
+  font-size: 80%;
+  color: #fff;
+}
+.step-bloc__icon {
+  margin-right: 1.5rem;
+}
 
 /*# sourceMappingURL=index.css.map */
