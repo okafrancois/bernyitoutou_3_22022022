@@ -31,5 +31,10 @@
 
   &__link {
     margin-bottom: 0.5rem;
+
+    svg {
+      margin-right: 0.5rem;
+      width: 25px;
+    }
   }
 }

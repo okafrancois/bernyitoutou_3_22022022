@@ -20,6 +20,10 @@
   justify-content: center;
   box-shadow: 0 2px 5px #c2c2c2;
   position: relative;
+
+  .back-btn {
+    margin: 0 1rem;
+  }
 }
 
 .main-logo {
@@ -40,6 +44,9 @@
   background: darken($gray, 5%);
   color: $custom-font-color;
   font-weight: bold;
-}
 
+  .location__icon {
+    margin-right: 1rem;
+  }
+}
 
