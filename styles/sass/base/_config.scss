@@ -1,7 +1,7 @@
 @use '../utils/varibales' as *;
 @use '../utils/functions' as *;
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 /*
   Index
   ---------- ---------- ---------- ---------- ----------
@@ -28,7 +28,7 @@ h2
 }
 
 .container {
-  padding: to-rem(45) to-rem(25);
+  padding: to-rem(35) to-rem(15);
 }
 
 .last-margin-fix {

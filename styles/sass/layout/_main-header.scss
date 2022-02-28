@@ -6,6 +6,7 @@
   ---------- ---------- ---------- ---------- ----------
   • Main Navigation
   • Header Banner
+  • Homepage styles
 */
 
 /*
@@ -22,6 +23,8 @@
   position: relative;
 
   .back-btn {
+    position: absolute;
+    left: 0;
     margin: 0 1rem;
   }
 }
@@ -50,3 +53,13 @@
   }
 }
 
+/*
+  • Homepage Banner
+  ---------- ---------- ---------- ---------- ----------
+*/
+
+.home {
+  .back-btn {
+    display: none;
+  }
+}
