@@ -59,11 +59,11 @@
   }
 
   &:nth-child(2) {
-    @include delayedAnimation(fadeUp, 0.4s);
+    @include delayedAnimation(fadeUp, 0.5s);
   }
 
   &:nth-child(3) {
-    @include delayedAnimation(fadeUp, 0.5s);
+    @include delayedAnimation(fadeUp, 0.7s);
   }
 
   &__container {

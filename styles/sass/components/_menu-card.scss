@@ -89,10 +89,14 @@
 */
 
 .--new.menu-card {
-  &__label {
+  .menu-card__label {
     display: block;
     color: $green;
     background: #99E2D0;
+
+    &::after {
+      content: "Nouveau";
+    }
   }
 }
 
