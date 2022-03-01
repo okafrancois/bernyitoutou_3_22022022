@@ -1,5 +1,6 @@
 @use '../utils/varibales' as *;
 @use '../utils/functions' as *;
+@use '../utils/mixins' as *;
 
 /*
   Index
@@ -56,11 +57,15 @@
     width: 100%;
     margin-bottom: to-rem(5);
     font-size: 1rem;
+
+    @include noWrapText
   }
 
   &__desc {
     width: calc(100% - (60px));
     font-size: 0.8rem;
+
+    @include noWrapText
   }
 
   &__price {

@@ -649,9 +649,15 @@ h2 {
   font-weight: bold;
   margin-bottom: 0.3125rem;
   font-size: 1.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-card__subtitle {
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-card__save-icon {
   position: absolute;
@@ -722,10 +728,16 @@ h2 {
   width: 100%;
   margin-bottom: 0.3125rem;
   font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plate-card__desc {
   width: calc(100% - 60px);
   font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plate-card__price {
   width: 60px;
@@ -935,6 +947,10 @@ h2 {
   align-items: center;
   justify-content: center;
   padding: 1rem 0;
+}
+.menu-action .button {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,6 +1,7 @@
 @use 'sass:color' as *;
 @use '../utils/varibales' as *;
 @use '../utils/functions' as *;
+@use '../utils/mixins' as *;
 
 /*
   Index
@@ -64,10 +65,14 @@
     font-weight: bold;
     margin-bottom: to-rem(5);
     font-size: 1.1rem;
+
+    @include noWrapText
   }
 
   &__subtitle {
     font-weight: 300;
+
+    @include noWrapText
   }
 
   &__save-icon {
