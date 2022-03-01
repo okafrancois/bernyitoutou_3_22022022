@@ -525,6 +525,45 @@ h2 {
   Index
   ---------- ---------- ---------- ---------- ----------
   • Base styles
+  • --active styles
+*/
+/*
+  • Base styles
+  ---------- ---------- ---------- ---------- ----------
+*/
+.save-icon {
+  cursor: pointer;
+  margin: 0 1rem;
+  width: 100%;
+  max-width: 30px;
+}
+.save-icon svg {
+  stroke-width: 20;
+  stroke: #000;
+  width: 100%;
+  height: auto;
+}
+.save-icon svg path {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  fill: transparent;
+}
+
+/*
+  • --hover styles
+  ---------- ---------- ---------- ---------- ----------
+*/
+.--saved .save-icon svg path,
+.save-icon:hover svg path {
+  stroke-width: 0;
+  fill: url(#paint0_linear_231_2);
+}
+
+/*
+  Index
+  ---------- ---------- ---------- ---------- ----------
+  • Base styles
   • --new styles
 */
 /*
@@ -583,7 +622,7 @@ h2 {
   position: absolute;
   right: 0;
   top: 1rem;
-  width: 25px;
+  max-width: 25px;
 }
 
 /*
@@ -647,10 +686,11 @@ h2 {
 .plate-card__title {
   width: 100%;
   margin-bottom: 0.3125rem;
+  font-size: 1rem;
 }
 .plate-card__desc {
   width: calc(100% - 60px);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .plate-card__price {
   width: 60px;
@@ -681,44 +721,6 @@ h2 {
 }
 .plate-card:hover .plate-card__validation .valid-icon {
   animation: 0.3s ease-out rotate360;
-}
-
-/*
-  Index
-  ---------- ---------- ---------- ---------- ----------
-  • Base styles
-  • --active styles
-*/
-/*
-  • Base styles
-  ---------- ---------- ---------- ---------- ----------
-*/
-.save-icon {
-  cursor: pointer;
-  margin: 0 1rem;
-  width: 30px;
-}
-.save-icon svg {
-  stroke-width: 20;
-  stroke: #000;
-  width: 100%;
-  height: auto;
-}
-.save-icon svg path {
-  height: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-out;
-  fill: transparent;
-}
-
-/*
-  • --hover styles
-  ---------- ---------- ---------- ---------- ----------
-*/
-.--saved .save-icon svg path,
-.save-icon:hover svg path {
-  stroke-width: 0;
-  fill: url(#paint0_linear_231_2);
 }
 
 /*
@@ -855,6 +857,10 @@ h2 {
   font-style: italic;
   font-size: 1.7rem;
 }
+.menu-headers__icon {
+  width: 25px;
+}
+
 /*
   • Menu Headers styles
   ---------- ---------- ---------- ---------- ----------

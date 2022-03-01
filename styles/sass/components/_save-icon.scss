@@ -17,7 +17,8 @@
 .save-icon {
   cursor: pointer;
   margin: 0 1rem;
-  width: 30px;
+  width: 100%;
+  max-width: 30px;
 
   svg {
     stroke-width: 20;
