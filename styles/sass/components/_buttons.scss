@@ -5,6 +5,7 @@
   ---------- ---------- ---------- ---------- ----------
   • Base styles
   • --primary styles
+  . :hover styles
 */
 
 /*
@@ -18,15 +19,30 @@
   background: $gray;
   color: #fff;
   border-radius: 2rem;
-  box-shadow: 0px 5px 5px 0 rgba(113, 113, 113, 0.21);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
 }
+
+/*
+  • Base styles
+  ---------- ---------- ---------- ---------- ----------
+*/
 
 .button.--primary {
   background: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
 }
 
+/*
+  • :hover styles
+  ---------- ---------- ---------- ---------- ----------
+*/
+
 .button:hover {
-  filter: brightness(2);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.--primary.button:hover {
+  background: linear-gradient(0deg, lighten($primary-color, 5) 0%, lighten($secondary-color, 5) 100%);
 }
 
 
