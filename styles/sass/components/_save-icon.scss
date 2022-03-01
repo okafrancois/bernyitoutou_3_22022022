@@ -1,0 +1,50 @@
+@use '../utils/varibales' as *;
+@use '../utils/functions' as *;
+
+/*
+  Index
+  ---------- ---------- ---------- ---------- ----------
+  • Base styles
+  • --active styles
+*/
+
+
+/*
+  • Base styles
+  ---------- ---------- ---------- ---------- ----------
+*/
+
+.save-icon {
+  cursor: pointer;
+  margin: 0 1rem;
+  width: 30px;
+
+  svg {
+    stroke-width: 20;
+    stroke: #000;
+    width: 100%;
+    height: auto;
+
+    path {
+      height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease-out;
+      fill: transparent;
+    }
+  }
+}
+
+/*
+  • --hover styles
+  ---------- ---------- ---------- ---------- ----------
+*/
+
+.--saved .save-icon,
+.save-icon:hover {
+  svg {
+    path {
+      stroke-width: 0;
+      fill:(url(#paint0_linear_231_2));
+    }
+  }
+}

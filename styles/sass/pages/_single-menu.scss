@@ -63,35 +63,12 @@
     font-size: 1.7rem;
   }
 
-  &__save-icon {
-    cursor: pointer;
-    margin: 0 1rem;
-    width: 30px;
+  &__icon {
 
-    svg {
-      stroke-width: 20;
-      stroke: #000;
-      width: 100%;
-      height: auto;
-
-      path {
-        height: 0;
-        overflow: hidden;
-        transition: all 0.3s ease-out;
-        fill: transparent;
-      }
-    }
   }
+
 }
 
-.menu-headers__save-icon:hover {
-  svg {
-    path {
-      stroke-width: 0;
-      fill:(url(#paint0_linear_231_2));
-    }
-  }
-}
 
 /*
   • Menu Headers styles
