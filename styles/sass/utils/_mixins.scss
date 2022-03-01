@@ -3,7 +3,3 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-@mixin delayedAnimation($animation, $delay) {
-  animation: 0.4s ease-in-out $delay forwards $animation;
-}

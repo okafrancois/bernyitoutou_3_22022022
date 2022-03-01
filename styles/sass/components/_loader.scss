@@ -1,0 +1,87 @@
+@use '../utils/varibales' as *;
+@use '../utils/functions' as *;
+@use '../utils/mixins' as *;
+
+/*
+  Index
+  ---------- ---------- ---------- ---------- ----------
+  • Base styles
+  • :Hover styles
+*/
+
+@keyframes removeLoader {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: 0;
+  }
+}
+
+@keyframes removeContent {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes grow {
+  0% { height: 50px }
+  50% { height: 70px  }
+  100% { height: 30px }
+}
+
+@mixin delayedGrow($delay) {
+  animation: 1s ease-in-out $delay infinite alternate grow;
+}
+
+/*
+  • Base styles
+  ---------- ---------- ---------- ---------- ----------
+*/
+
+.loading {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  animation: 1s ease-in-out 3s forwards removeLoader;
+
+  &__content {
+    animation: 0.5s ease-in-out 3s forwards removeContent;
+    display: flex;
+    align-items: center;
+  }
+
+  &__bar {
+    height: 50px;
+    width: 10px;
+    background: black;
+    margin-left: 5px;
+    border-radius: 5px;
+
+    &:nth-child(1) {
+      background: $primary-color;
+      @include delayedGrow(0s);
+    }
+
+    &:nth-child(2) {
+      background: $secondary-color;
+      @include delayedGrow(0.1s);
+    }
+
+    &:nth-child(3) {
+      background: $alternative-color;
+      @include delayedGrow(0.2s);
+    }
+  }
+}

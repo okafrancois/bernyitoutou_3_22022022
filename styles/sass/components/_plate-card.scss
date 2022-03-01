@@ -37,6 +37,9 @@
   }
 }
 
+@mixin delayedAnimation($animation, $delay) {
+  animation: 0.5s ease-in-out $delay forwards $animation;
+}
 /*
   • Base styles
   ---------- ---------- ---------- ---------- ----------
@@ -52,15 +55,15 @@
   box-shadow: $default-box-shadow;
 
   &:nth-child(1) {
-    @include delayedAnimation(fadeUp, 0.8s);
+    @include delayedAnimation(fadeUp, 0.3s);
   }
 
   &:nth-child(2) {
-    @include delayedAnimation(fadeUp, 0.9s);
+    @include delayedAnimation(fadeUp, 0.4s);
   }
 
   &:nth-child(3) {
-    @include delayedAnimation(fadeUp, 1s);
+    @include delayedAnimation(fadeUp, 0.5s);
   }
 
   &__container {
