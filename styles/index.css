@@ -610,6 +610,7 @@ h2 {
   border-radius: 20px;
   margin-bottom: 1.5rem;
   box-shadow: 0px 5px 15px 0 rgba(113, 113, 113, 0.21);
+  transition: transform 0.3s ease-out;
 }
 .menu-card__container {
   display: block;
@@ -676,10 +677,12 @@ h2 {
   background: #99E2D0;
 }
 
-.menu-card svg:hover {
-  stroke: #9356DC;
-  color: #9356DC;
-  /** TODO: faire une animation au remplissage**/
+/*
+  • :hover styles
+  ---------- ---------- ---------- ---------- ----------
+*/
+.menu-card:hover {
+  transform: scale(1.05);
 }
 
 /*
