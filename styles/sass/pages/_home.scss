@@ -6,6 +6,7 @@
   ---------- ---------- ---------- ---------- ----------
   • Config
   • Banner section styles
+  • Process section styles
 */
 
 
@@ -53,6 +54,7 @@
   border-radius: 1rem;
   font-weight: 500;
   color: $custom-font-color;
+  transition: background-color 0.3s ease-out;
 
   &__number {
     position: absolute;
@@ -71,6 +73,15 @@
   &__icon {
     margin-right: 1.5rem;
     width: 25px;
+    transition: color 0.3s ease-out;
+  }
+}
+
+.step-bloc:hover {
+  background: lighten($primary-color, 30);
+
+  .icon {
+    color: $primary-color;
   }
 }
 

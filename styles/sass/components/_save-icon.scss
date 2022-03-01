@@ -8,6 +8,14 @@
   • --active styles
 */
 
+@keyframes fill {
+  from {
+    height: 0;
+  }
+  to {
+    height: 25px;
+  }
+}
 
 /*
   • Base styles
@@ -15,37 +23,46 @@
 */
 
 .save-icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
   margin: 0 1rem;
   width: 100%;
   max-width: 30px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000;
 
-  svg {
-    stroke-width: 20;
-    stroke: #000;
-    width: 100%;
-    height: auto;
+  > * {
+    transition: 0.3s ease-in-out;
+    transition-property: height, color;
+    display: block;
+    overflow: hidden;
+    height: 25px;
+  }
 
-    path {
-      height: 0;
-      overflow: hidden;
-      transition: all 0.3s ease-out;
-      fill: transparent;
-    }
+  .--active {
+    position: absolute;
+    top: 0;
+    height: 0;
+    background-image: linear-gradient(0deg, $secondary-color 0%, $primary-color 100%);;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 }
+
 
 /*
   • --hover styles
   ---------- ---------- ---------- ---------- ----------
 */
-
-.--saved .save-icon,
-.save-icon:hover {
-  svg {
-    path {
-      stroke-width: 0;
-      fill:(url(#paint0_linear_231_2));
-    }
+.save-icon:hover,
+.--saved {
+  .--base {
+    color: transparent;
+  }
+  .--active {
+    height: 25px;
   }
 }
