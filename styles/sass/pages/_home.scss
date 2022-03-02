@@ -7,6 +7,8 @@
   • Config
   • Banner section styles
   • Process section styles
+  • Tablet breakpoint styles
+  • Large breakpoint styles
 */
 
 
@@ -35,7 +37,6 @@
     margin-bottom: to-rem(25);
   }
 }
-
 
 /*
   • Process section styles
@@ -85,7 +86,6 @@
   }
 }
 
-
 /*
   • Restaurant cards section styles
   ---------- ---------- ---------- ---------- ----------
@@ -98,9 +98,51 @@
 .restaurants__cards {
   display: flex;
   flex-flow: row wrap;
-  gap: 0 2%;
 
   > * {
     width: 100%;
   }
 }
+
+/*
+  • Tablet breakpoint styles
+  ---------- ---------- ---------- ---------- ----------
+*/
+
+@media all and (min-width: $tablet-breakpoint) {
+
+  //process section
+
+  .process {
+    &__title {
+      text-align: center;
+    }
+
+    &__steps {
+      display: flex;
+      justify-content: center;
+
+      .step-bloc {
+        margin-bottom: 0;
+        margin-right: 1.5rem;
+      }
+    }
+  }
+
+  //restaurants cards section
+
+  .restaurants {
+    &__title {
+      text-align: center;
+    }
+    &__cards {
+      width: 100%;
+      justify-content: center;
+
+      > * {
+        max-width: 260px;
+      }
+    }
+  }
+}
+

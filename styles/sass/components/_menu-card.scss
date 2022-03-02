@@ -7,6 +7,7 @@
   ---------- ---------- ---------- ---------- ----------
   • Base styles
   • --new styles
+  • :hover styles
 */
 
 /*
@@ -106,9 +107,24 @@
   ---------- ---------- ---------- ---------- ----------
 */
 
-
 .menu-card {
   &:hover {
     transform: scale(1.05);
+  }
+}
+
+/*
+  • Tablet breakpoint styles
+  ---------- ---------- ---------- ---------- ----------
+*/
+
+@media all and (min-width: $tablet-breakpoint) {
+
+  .menu-card {
+    margin: 1rem;
+
+    &:last-child {
+      margin: 1rem !important;
+    }
   }
 }

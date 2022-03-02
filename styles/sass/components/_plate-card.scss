@@ -66,6 +66,10 @@
     @include delayedAnimation(fadeUp, 0.7s);
   }
 
+  &:nth-child(4) {
+    @include delayedAnimation(fadeUp, 0.8s);
+  }
+
   &__container {
     display: flex;
 
@@ -86,13 +90,15 @@
     width: 100%;
     margin-bottom: to-rem(5);
     font-size: 1rem;
+    font-weight: 500;
 
     @include noWrapText
   }
 
   &__desc {
     width: calc(100% - (60px));
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 300;
 
     @include noWrapText
   }

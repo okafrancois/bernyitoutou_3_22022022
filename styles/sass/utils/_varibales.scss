@@ -1,4 +1,17 @@
-//colors set
+/*
+  Index
+  ---------- ---------- ---------- ---------- ----------
+  • Colors set
+  • Fonts set
+  • Shadows set
+  • Breakpoints set
+*/
+
+/*
+  • Colors set
+  ---------- ---------- ---------- ---------- ----------
+*/
+
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $alternative-color: #99E2D0;
@@ -6,12 +19,27 @@ $gray: #F6F6F6;
 $dark-gray: #353535;
 $green: #008766;
 
-//fonts set
+/*
+  • Fonts set
+  ---------- ---------- ---------- ---------- ----------
+*/
+
 $default-font-base: 16;
 $default-font-family: 'Roboto';
 $title-font-family: 'Shrikhand';
 $default-font-color: #000;
 $custom-font-color: $dark-gray;
 
-//Shadows
-$default-box-shadow: 0px 5px 15px 0 rgba(113, 113, 113, 0.21)
+/*
+  • Shadows set
+  ---------- ---------- ---------- ---------- ----------
+*/
+
+$default-box-shadow: 0px 5px 15px 0 rgba(113, 113, 113, 0.21);
+
+/*
+  • Breakpoints set
+  ---------- ---------- ---------- ---------- ----------
+*/
+
+$tablet-breakpoint: 768px;

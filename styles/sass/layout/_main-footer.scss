@@ -4,6 +4,7 @@
   Index
   ---------- ---------- ---------- ---------- ----------
   • Base styles
+  • Tablet breakpoint styles
 */
 
 /*
@@ -35,6 +36,34 @@
     i {
       margin-right: 0.5rem;
       width: 25px;
+    }
+  }
+}
+
+
+/*
+  • Tablet breakpoint styles
+  ---------- ---------- ---------- ---------- ----------
+*/
+
+.main-footer {
+
+  &__logo {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+
+    svg {
+      width: 200px;
+    }
+
+  }
+
+  .navigation {
+    align-items: center;
+
+    &__link {
+      font-size: 1.2em;
     }
   }
 }

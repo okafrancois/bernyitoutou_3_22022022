@@ -4,13 +4,17 @@
 /*
   Index
   ---------- ---------- ---------- ---------- ----------
-  • Config
+  • Global styles
   • Menu Cover styles
+  • Menu Headers styles
+  • Menu item styles
+  • Menu action styles
+  • Tablet breakpoint styles
 */
 
 
 /*
-  • Config
+  • Global styles
   ---------- ---------- ---------- ---------- ----------
 */
 
@@ -69,15 +73,13 @@
 
 }
 
-
 /*
-  • Menu Headers styles
+  • Menu item styles
   ---------- ---------- ---------- ---------- ----------
 */
 
 .menu-item {
   margin-bottom: 2rem;
-  color: $custom-font-color;
 
   &__title {
     position: relative;
@@ -98,7 +100,10 @@
 }
 
 
-
+/*
+  • Menu item styles
+  ---------- ---------- ---------- ---------- ----------
+*/
 
 .menu-action {
   display: flex;
@@ -109,5 +114,21 @@
   .button {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+}
+
+/*
+  • Tablet breakpoint styles
+  ---------- ---------- ---------- ---------- ----------
+*/
+
+@media all and (min-width: $tablet-breakpoint) {
+  .menu-list {
+    display: flex;
+    gap: 0 2%;
+
+    > * {
+      width: calc((100% - 4%) / 3);
+    }
   }
 }
