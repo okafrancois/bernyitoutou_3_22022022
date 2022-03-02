@@ -1,5 +1,16 @@
-@mixin noWrapText {
+@use '../utils/varibales' as *;
+@use '../utils/functions' as *;
+
+//replace text wrap
+@mixin nowrap-text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+};
+
+//responsive breakpoint
+@mixin on-tablet{
+  @media all and (min-width: map-get($breakpoints, tablet)) {
+    @content
+  }
 }

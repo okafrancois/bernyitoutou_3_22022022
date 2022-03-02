@@ -5,7 +5,7 @@
   @return $number * 1px;
 }
 
-//convert a number into
+//convert a number into rem
 @function to-rem($pxValue) {
-  @return #{$pxValue / $default-font-base}rem;
+  @return #{$pxValue / map-get($font-sets, base-size)}rem;
 }

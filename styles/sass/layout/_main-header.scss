@@ -44,8 +44,8 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background: darken($gray, 5%);
-  color: $custom-font-color;
+  background: darken(map-get($colors-palette, custom-gray), 5%);
+  color: map-get($colors-palette, custom-dgray);
   font-weight: bold;
 
   .location__icon {

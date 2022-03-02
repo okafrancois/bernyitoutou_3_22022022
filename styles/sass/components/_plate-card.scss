@@ -92,7 +92,7 @@
     font-size: 1rem;
     font-weight: 500;
 
-    @include noWrapText
+    @include nowrap-text
   }
 
   &__desc {
@@ -100,7 +100,7 @@
     font-size: 0.9rem;
     font-weight: 300;
 
-    @include noWrapText
+    @include nowrap-text
   }
 
   &__price {
@@ -110,7 +110,7 @@
   }
 
   &__validation {
-    background: $alternative-color;
+    background: map-get($colors-palette, tertiary);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,12 +1,17 @@
 @use '../utils/varibales' as *;
-@use '../utils/functions' as *;
 @use '../utils/mixins' as *;
 
 /*
   Index
   ---------- ---------- ---------- ---------- ----------
+  • Config
   • Base styles
   • :Hover styles
+*/
+
+/*
+  • Config
+  ---------- ---------- ---------- ---------- ----------
 */
 
 @keyframes removeLoader {
@@ -54,10 +59,10 @@
   align-items: center;
   justify-content: center;
   background: #fff;
-  animation: 1s ease-in-out 3s forwards removeLoader;
+  animation: 1s ease-in-out 2s forwards removeLoader;
 
   &__content {
-    animation: 0.5s ease-in-out 3s forwards removeContent;
+    animation: 0.5s ease-in-out 2s forwards removeContent;
     display: flex;
     align-items: center;
   }
@@ -70,17 +75,17 @@
     border-radius: 5px;
 
     &:nth-child(1) {
-      background: $primary-color;
+      background: map-get($colors-palette, primary);
       @include delayedGrow(0s);
     }
 
     &:nth-child(2) {
-      background: $secondary-color;
+      background: map-get($colors-palette, secondary);
       @include delayedGrow(0.1s);
     }
 
     &:nth-child(3) {
-      background: $alternative-color;
+      background: map-get($colors-palette, tertiary);
       @include delayedGrow(0.2s);
     }
   }

@@ -1,5 +1,6 @@
 @use '../utils/varibales' as *;
 @use '../utils/functions' as *;
+@use '../utils/mixins' as *;
 
 /*
   Index
@@ -24,7 +25,7 @@
 */
 
 .banner {
-  background: $gray;
+  background: map-get($colors-palette, custom-gray);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,13 +49,13 @@
   display: flex;
   align-items: center;
   padding: 1.7rem;
-  background: $gray;
+  background: map-get($colors-palette, custom-gray);
   margin-bottom: 1.5rem;
   margin-left: calc(25px /2);
   box-shadow: $default-box-shadow;
   border-radius: 1rem;
   font-weight: 500;
-  color: $custom-font-color;
+  color: map-get($colors-palette, custom-dgray);
   transition: background-color 0.3s ease-out;
 
   &__number {
@@ -63,7 +64,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: $primary-color;
+    background: map-get($colors-palette, primary);
     height: to-rem(25);
     width: to-rem(25);
     border-radius: 50%;
@@ -79,10 +80,10 @@
 }
 
 .step-bloc:hover {
-  background: lighten($primary-color, 30);
+  background: lighten(map-get($colors-palette, primary), 30%);
 
   .icon {
-    color: $primary-color;
+    color: map-get($colors-palette, primary);
   }
 }
 
@@ -92,7 +93,7 @@
 */
 
 .restaurants {
-  background: $gray;
+  background: map-get($colors-palette, custom-gray);
 }
 
 .restaurants__cards {
@@ -109,7 +110,7 @@
   ---------- ---------- ---------- ---------- ----------
 */
 
-@media all and (min-width: $tablet-breakpoint) {
+@include on-tablet {
 
   //process section
 

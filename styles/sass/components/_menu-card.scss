@@ -68,13 +68,13 @@
     margin-bottom: to-rem(5);
     font-size: 1.1rem;
 
-    @include noWrapText
+    @include nowrap-text
   }
 
   &__subtitle {
     font-weight: 300;
 
-    @include noWrapText
+    @include nowrap-text
   }
 
   &__save-icon {
@@ -93,8 +93,8 @@
 .--new.menu-card {
   .menu-card__label {
     display: block;
-    color: $green;
-    background: #99E2D0;
+    color: map-get($colors-palette, custom-green);
+    background: lighten(map-get($colors-palette, custom-green), $amount: 20%);
 
     &::after {
       content: "Nouveau";

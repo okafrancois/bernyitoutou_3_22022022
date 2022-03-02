@@ -13,7 +13,7 @@
 */
 
 .main-footer {
-  background: $dark-gray;
+  background: map-get($colors-palette, custom-dgray);
   color: #fff;
 
   &__logo svg{

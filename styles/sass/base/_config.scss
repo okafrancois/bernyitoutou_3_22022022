@@ -1,23 +1,24 @@
 @use '../utils/varibales' as *;
 @use '../utils/functions' as *;
+@use '../utils/mixins' as *;
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 /*
   Index
   ---------- ---------- ---------- ---------- ----------
-  • Base styles
+  • Global styles
   • Tablet breakpoint styles
 */
 
 /*
-  • Base styles
+  • Global styles
   ---------- ---------- ---------- ---------- ----------
 */
 
 body {
-  font-size: to-px($default-font-base);
-  font-family: $default-font-family;
-  color: $default-font-color
+  font-size: to-px(map-get($font-sets, base-size));
+  font-family: map-get($font-sets, font-family);
+  color: map-get($font-sets, font-color);
 }
 
 h1,
@@ -44,13 +45,12 @@ h2
   ---------- ---------- ---------- ---------- ----------
 */
 
-@media all and (min-width: $tablet-breakpoint) {
-  main {
-    min-height: calc(100vh - 310px);
-  }
-
+@include on-tablet{
   .container {
     padding: to-rem(40);
   }
-}
 
+  main {
+    min-height: calc(100vh - 310px);
+  }
+}
