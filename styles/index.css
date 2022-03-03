@@ -572,7 +572,7 @@ h2 {
   color: #fff;
   border-radius: 2rem;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, box-shadow 0.25s 0.05s ease-in-out;
 }
 
 /*
@@ -588,7 +588,7 @@ h2 {
   ---------- ---------- ---------- ---------- ----------
 */
 .button:hover {
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.3);
 }
 
 .--primary.button:hover {
