@@ -16,7 +16,7 @@
 
 @keyframes remove {
   from {
-    transform: none;
+    transform: scaleY(1);
   }
   to {
     transform: scaleY(0);
@@ -45,10 +45,11 @@
   align-items: center;
   justify-content: center;
   background: #fff;
-  animation: remove 1s ease-in-out 3s forwards ;
+  transform-origin: top;
+  animation: remove 1s ease-out 3s forwards;
 
   &__content {
-    animation: remove 0.5s ease-in-out 3.5s forwards;
+    animation: remove 0.5s ease 3.5s forwards;
     display: flex;
     align-items: center;
   }
