@@ -888,31 +888,23 @@ h2 {
   • Config
   ---------- ---------- ---------- ---------- ----------
 */
-@keyframes removeLoader {
+@keyframes remove {
   from {
-    height: 100vh;
+    transform: none;
   }
   to {
-    height: 0;
-  }
-}
-@keyframes removeContent {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
+    transform: scaleY(0);
   }
 }
 @keyframes grow {
   0% {
-    height: 50px;
+    transform: scaleY(1);
   }
-  50% {
-    height: 70px;
+  20% {
+    transform: scaleY(0.8);
   }
   100% {
-    height: 30px;
+    transform: scaleY(1.5);
   }
 }
 /*
@@ -931,31 +923,31 @@ h2 {
   align-items: center;
   justify-content: center;
   background: #fff;
-  animation: 1s ease-in-out 2s forwards removeLoader;
+  animation: remove 1s ease-in-out 3s forwards;
 }
 .loading__content {
-  animation: 0.5s ease-in-out 2s forwards removeContent;
+  animation: remove 0.5s ease-in-out 3.5s forwards;
   display: flex;
   align-items: center;
 }
 .loading__bar {
-  height: 50px;
+  height: 60px;
   width: 10px;
   background: black;
   margin-left: 5px;
-  border-radius: 5px;
+  border-radius: 20px;
+  animation: grow 1s ease-in-out infinite alternate;
 }
 .loading__bar:nth-child(1) {
   background: #9356DC;
-  animation: 1s ease-in-out 0s infinite alternate grow;
 }
 .loading__bar:nth-child(2) {
   background: #FF79DA;
-  animation: 1s ease-in-out 0.1s infinite alternate grow;
+  animation-delay: 0.1s;
 }
 .loading__bar:nth-child(3) {
   background: #99E2D0;
-  animation: 1s ease-in-out 0.2s infinite alternate grow;
+  animation-delay: 0.2s;
 }
 
 /*

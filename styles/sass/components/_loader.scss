@@ -14,21 +14,12 @@
   ---------- ---------- ---------- ---------- ----------
 */
 
-@keyframes removeLoader {
+@keyframes remove {
   from {
-    height: 100vh;
+    transform: none;
   }
   to {
-    height: 0;
-  }
-}
-
-@keyframes removeContent {
-  from {
-    max-height: 70px;
-  }
-  to {
-    max-height: 0;
+    transform: scaleY(0);
   }
 }
 
@@ -54,10 +45,10 @@
   align-items: center;
   justify-content: center;
   background: #fff;
-  animation: removeLoader 1s ease-in-out 100s forwards ;
+  animation: remove 1s ease-in-out 3s forwards ;
 
   &__content {
-    animation: removeContent 0.5s ease-in-out 2s forwards;
+    animation: remove 0.5s ease-in-out 3.5s forwards;
     display: flex;
     align-items: center;
   }
