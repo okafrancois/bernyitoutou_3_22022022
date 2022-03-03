@@ -34,7 +34,7 @@
 
 @keyframes grow {
   0% { transform: scaleY(1);}
-  20% { transform: scaleY(0.5);}
+  20% { transform: scaleY(0.8);}
   100% { transform: scaleY(1.5);}
 }
 /*
@@ -63,7 +63,7 @@
   }
 
   &__bar {
-    height: 70px;
+    height: 60px;
     width: 10px;
     background: black;
     margin-left: 5px;
