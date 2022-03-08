@@ -1,4 +1,5 @@
 @use '../utils/varibales' as *;
+@use '../utils/mixins' as *;
 
 /*
   Index
@@ -45,25 +46,26 @@
   • Tablet breakpoint styles
   ---------- ---------- ---------- ---------- ----------
 */
+@include on-tablet{
+  .main-footer {
 
-.main-footer {
+    &__logo {
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
 
-  &__logo {
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
+      svg {
+        width: 200px;
+      }
 
-    svg {
-      width: 200px;
     }
 
-  }
+    .navigation {
+      align-items: center;
 
-  .navigation {
-    align-items: center;
-
-    &__link {
-      font-size: 1.2em;
+      &__link {
+        font-size: 1.2em;
+      }
     }
   }
 }

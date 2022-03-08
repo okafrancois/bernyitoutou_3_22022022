@@ -539,21 +539,22 @@ h2 {
   • Tablet breakpoint styles
   ---------- ---------- ---------- ---------- ----------
 */
-.main-footer__logo {
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
+@media all and (min-width: 768px) {
+  .main-footer__logo {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .main-footer__logo svg {
+    width: 200px;
+  }
+  .main-footer .navigation {
+    align-items: center;
+  }
+  .main-footer .navigation__link {
+    font-size: 1.2em;
+  }
 }
-.main-footer__logo svg {
-  width: 200px;
-}
-.main-footer .navigation {
-  align-items: center;
-}
-.main-footer .navigation__link {
-  font-size: 1.2em;
-}
-
 /*
   Index
   ---------- ---------- ---------- ---------- ----------
