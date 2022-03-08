@@ -35,7 +35,7 @@
 
   > * {
     transition: 0.3s ease-in-out;
-    transition-property: height, color, opacity;
+    transition-property: height, color, opacity, clip-path;
     display: block;
     overflow: hidden;
     height: 25px;
@@ -44,11 +44,12 @@
   .--active {
     position: absolute;
     top: 0;
-    height: 0;
+    height: 25px;
     opacity: 0;
     background-image: linear-gradient(0deg, map-get($colors-palette, secondary) 0%, map-get($colors-palette, primary) 100%);;
     -webkit-background-clip: text;
     color: transparent;
+    clip-path: inset(90% 0% 0%);
   }
 }
 
@@ -63,7 +64,7 @@
     color: transparent;
   }
   .--active {
-    height: 25px;
     opacity: 1;
+    clip-path: inset(0% 0% 0%);
   }
 }

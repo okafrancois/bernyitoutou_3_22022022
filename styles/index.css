@@ -627,7 +627,7 @@ h2 {
 }
 .save-icon > * {
   transition: 0.3s ease-in-out;
-  transition-property: height, color, opacity;
+  transition-property: height, color, opacity, clip-path;
   display: block;
   overflow: hidden;
   height: 25px;
@@ -635,11 +635,12 @@ h2 {
 .save-icon .--active {
   position: absolute;
   top: 0;
-  height: 0;
+  height: 25px;
   opacity: 0;
   background-image: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
   -webkit-background-clip: text;
   color: transparent;
+  clip-path: inset(90% 0% 0%);
 }
 
 /*
@@ -652,8 +653,8 @@ h2 {
 }
 .save-icon:hover .--active,
 .--saved .--active {
-  height: 25px;
   opacity: 1;
+  clip-path: inset(0% 0% 0%);
 }
 
 /*
