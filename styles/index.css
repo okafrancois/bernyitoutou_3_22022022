@@ -559,8 +559,8 @@ h2 {
   Index
   ---------- ---------- ---------- ---------- ----------
   • Base styles
-  • --primary styles
-  . :hover styles
+  • primary styles
+  . hover styles
 */
 /*
   • Base styles
@@ -580,7 +580,7 @@ h2 {
   • Base styles
   ---------- ---------- ---------- ---------- ----------
 */
-.button.--primary {
+.button--primary {
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
 }
 
@@ -592,7 +592,7 @@ h2 {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
-.--primary.button:hover {
+.button--primary:hover {
   background: linear-gradient(0deg, #a16be0 0%, #ff93e1 100%);
 }
 
@@ -600,7 +600,7 @@ h2 {
   Index
   ---------- ---------- ---------- ---------- ----------
   • Base styles
-  • --active styles
+  • active styles
 */
 @keyframes fill {
   from {
@@ -632,7 +632,7 @@ h2 {
   overflow: hidden;
   height: 25px;
 }
-.save-icon .--active {
+.save-icon--active {
   position: absolute;
   top: 0;
   height: 25px;
@@ -647,12 +647,12 @@ h2 {
   • --hover styles
   ---------- ---------- ---------- ---------- ----------
 */
-.save-icon:hover .--base,
-.--saved .--base {
+.save-icon:hover .save-icon--base,
+.saved .save-icon--base {
   color: transparent;
 }
-.save-icon:hover .--active,
-.--saved .--active {
+.save-icon:hover .save-icon--active,
+.saved .save-icon--active {
   opacity: 1;
   clip-path: inset(0% 0% 0%);
 }
@@ -661,8 +661,8 @@ h2 {
   Index
   ---------- ---------- ---------- ---------- ----------
   • Base styles
-  • --new styles
-  • :hover styles
+  • new styles
+  • hover styles
 */
 /*
   • Base styles
@@ -732,20 +732,20 @@ h2 {
 }
 
 /*
-  • --new styles
+  • new styles
   ---------- ---------- ---------- ---------- ----------
 */
-.--new.menu-card .menu-card__label {
+.menu-card--new .menu-card__label {
   display: block;
   color: #008766;
   background: #00edb3;
 }
-.--new.menu-card .menu-card__label::after {
+.menu-card--new .menu-card__label::after {
   content: "Nouveau";
 }
 
 /*
-  • :hover styles
+  • hover styles
   ---------- ---------- ---------- ---------- ----------
 */
 .menu-card:hover {

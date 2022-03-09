@@ -5,7 +5,7 @@
   Index
   ---------- ---------- ---------- ---------- ----------
   • Base styles
-  • --active styles
+  • active styles
 */
 
 @keyframes fill {
@@ -41,12 +41,12 @@
     height: 25px;
   }
 
-  .--active {
+  &--active {
     position: absolute;
     top: 0;
     height: 25px;
     opacity: 0;
-    background-image: linear-gradient(0deg, map-get($colors-palette, secondary) 0%, map-get($colors-palette, primary) 100%);;
+    background-image: linear-gradient(0deg, map-get($colors-palette, secondary) 0%, map-get($colors-palette, primary) 100%);
     -webkit-background-clip: text;
     color: transparent;
     clip-path: inset(90% 0% 0%);
@@ -59,11 +59,11 @@
   ---------- ---------- ---------- ---------- ----------
 */
 .save-icon:hover,
-.--saved {
-  .--base {
+.saved {
+  .save-icon--base {
     color: transparent;
   }
-  .--active {
+  .save-icon--active {
     opacity: 1;
     clip-path: inset(0% 0% 0%);
   }

@@ -4,8 +4,8 @@
   Index
   ---------- ---------- ---------- ---------- ----------
   • Base styles
-  • --primary styles
-  . :hover styles
+  • primary styles
+  . hover styles
 */
 
 /*
@@ -28,7 +28,7 @@
   ---------- ---------- ---------- ---------- ----------
 */
 
-.button.--primary {
+.button--primary {
   background: linear-gradient(0deg, map-get($colors-palette, primary) 0%, map-get($colors-palette, secondary) 100%);
 }
 
@@ -41,6 +41,6 @@
   box-shadow: 0 5px 10px 0 rgb(0 0 0 / 40%);
 }
 
-.--primary.button:hover {
+.button--primary:hover {
   background: linear-gradient(0deg, lighten(map-get($colors-palette, primary), 5) 0%, lighten(map-get($colors-palette, secondary), 5) 100%);
 }

@@ -6,8 +6,8 @@
   Index
   ---------- ---------- ---------- ---------- ----------
   • Base styles
-  • --new styles
-  • :hover styles
+  • new styles
+  • hover styles
 */
 
 /*
@@ -86,11 +86,11 @@
 }
 
 /*
-  • --new styles
+  • new styles
   ---------- ---------- ---------- ---------- ----------
 */
 
-.--new.menu-card {
+.menu-card--new {
   .menu-card__label {
     display: block;
     color: map-get($colors-palette, custom-green);
@@ -103,7 +103,7 @@
 }
 
 /*
-  • :hover styles
+  • hover styles
   ---------- ---------- ---------- ---------- ----------
 */
 
