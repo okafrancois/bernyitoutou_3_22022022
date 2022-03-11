@@ -37,9 +37,6 @@
   }
 }
 
-@mixin delayedAnimation($animation, $delay) {
-  animation: 0.5s ease-in-out $delay forwards $animation;
-}
 /*
   • Base styles
   ---------- ---------- ---------- ---------- ----------
@@ -53,21 +50,23 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: $default-box-shadow;
+  animation: 0.5s ease-in-out forwards fadeUp;
+
 
   &:nth-child(1) {
-    @include delayedAnimation(fadeUp, 0.3s);
+   animation-delay: 0.3s;
   }
 
   &:nth-child(2) {
-    @include delayedAnimation(fadeUp, 0.5s);
+    animation-delay: 0.5s;
   }
 
   &:nth-child(3) {
-    @include delayedAnimation(fadeUp, 0.7s);
+    animation-delay: 0.7s;
   }
 
   &:nth-child(4) {
-    @include delayedAnimation(fadeUp, 0.8s);
+    animation-delay: 0.8s;
   }
 
   &__container {
